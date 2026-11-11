@@ -175,28 +175,3 @@ Si el resultado no te convence, ajusta este archivo y vuelve a ejecutar la Etapa
 | `Fatal error in launcher` al usar `pip` | `pip.exe` apunta a un Python que ya no existe | Usar `python -m pip install ...` |
 
 ---
-
-## Seguridad y buenas prácticas
-
-- **No subas claves ni tokens** a repositorios ni los pegues en chats. Si se filtran, revócalos y crea otros.
-- Usa un PAT con **duración corta** y revócalo cuando termines.
-- En la capa gratuita de los servicios de IA, lo que envías puede usarse para mejorar el producto. **No incluyas información confidencial** en `necesidad.txt` sin confirmar las condiciones vigentes.
-- Prueba primero en un **proyecto de prueba** de Azure DevOps.
-- **No ejecutes `--crear` dos veces** con el mismo JSON: duplicarías los work items. Si el script se detiene a mitad, lo ya creado queda en `creados.json`; revisa Azure antes de reintentar.
-- El contenido generado es un **borrador**: revísalo antes de tratarlo como definitivo.
-
----
-
-## Limitaciones
-
-- La calidad del resultado depende de la calidad de `necesidad.txt` y de `normas.txt`.
-- La IA puede inventar o inflar el alcance, por eso la revisión humana es obligatoria.
-- El script no asigna personas, sprints, estimaciones ni prioridades.
-- No detecta duplicados: si ya existe algo en el backlog, lo vuelve a crear.
-
----
-
-## Próximos pasos posibles
-
-- **Formulario de requerimientos:** Microsoft Forms + Power Automate para que los requerimientos nuevos lleguen solos al backlog, con tareas estándar y vinculados a su Feature.
-- Estimación sugerida y revisión INVEST automática como apoyo para el refinamiento.
